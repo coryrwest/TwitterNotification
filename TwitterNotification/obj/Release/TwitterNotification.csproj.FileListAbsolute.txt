@@ -1,0 +1,9 @@
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Release\TwitterNotification.exe.config
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Release\TwitterNotification.exe.manifest
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Release\TwitterNotification.application
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Release\TwitterNotification.exe
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Release\TwitterNotification.pdb
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Release\TwitterNotification.exe.manifest
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Release\TwitterNotification.application
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Release\TwitterNotification.exe
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Release\TwitterNotification.pdb

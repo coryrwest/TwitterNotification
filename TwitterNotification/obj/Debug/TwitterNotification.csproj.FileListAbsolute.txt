@@ -1,0 +1,10 @@
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Debug\TwitterNotification.exe.config
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Debug\TwitterNotification.csprojResolveAssemblyReference.cache
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Debug\TwitterNotification.exe.manifest
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Debug\TwitterNotification.application
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Debug\TwitterNotification.exe
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\bin\Debug\TwitterNotification.pdb
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Debug\TwitterNotification.exe.manifest
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Debug\TwitterNotification.application
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Debug\TwitterNotification.exe
+C:\Users\cwestropp\Documents\Docs\TwitterNotification\TwitterNotification\obj\Debug\TwitterNotification.pdb
