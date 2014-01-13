@@ -123,7 +123,7 @@ namespace TwitterNotification {
 				Credentials = new NetworkCredential(FROM_EMAIL, SMTP_PASSWORD)
 			};
 
-			MailMessage message = new System.Net.Mail.MailMessage();
+			MailMessage message = new MailMessage();
 			message.To.Add(new MailAddress(TO_EMAIL));
 			message.Subject = EMAIL_SUBJECT + " - " + DateTime.Now.ToShortDateString();
 			message.From = new MailAddress(FROM_EMAIL);
@@ -148,7 +148,7 @@ namespace TwitterNotification {
 		#region Helpers
 		public static class ParseToDate {
 			public static DateTime ParseDate(string date) {
-				date = FindStringMatch(WebUtility.HtmlDecode(date), "data-time=\"", "\">", false);
+				date = FindStringMatch(WebUtility.HtmlDecode(date), "data-time=\"", "\"", false);
 				DateTime d = new DateTime();
 				d = UnixTimeStampToDateTime(Convert.ToDouble(date));
 				return d;
@@ -173,8 +173,8 @@ namespace TwitterNotification {
 					Console.WriteLine(error);
 				Console.ReadKey();
 				Environment.Exit(0);
-				return null;
 			}
+			return null;
 		}
 
 		/// <summary>
