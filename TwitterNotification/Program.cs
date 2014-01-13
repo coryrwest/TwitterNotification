@@ -72,7 +72,7 @@ namespace TwitterNotification {
 
 			// Find all tweets and add to collection
 			List<string> tweets = new List<string>();
-			tweets = FindAllStringMatches(source, "metadata", "stream-item-footer");
+			tweets = FindAllStringMatches(source, "icon dogear", "stream-item-footer");
 
 			// Further refine tweets
 			List<string> tweetsText = new List<string>();
@@ -144,21 +144,24 @@ namespace TwitterNotification {
 			public string Text { get; set; }
 			public DateTime Date { get; set; }
 		}
-
+		
+		#region Helpers
 		public static class ParseToDate {
 			public static DateTime ParseDate(string date) {
-				date = FindStringMatch(WebUtility.HtmlDecode(date), "<span title=\"", "\">", false);
-				string ti = date.Split('-')[0];
-				DateTime t = new DateTime();
-				t = DateTime.Parse(ti);
-				string da = date.Split('-')[1];
+				date = FindStringMatch(WebUtility.HtmlDecode(date), "data-time=\"", "\">", false);
 				DateTime d = new DateTime();
-				d = DateTime.Parse(da);
-				return DateTime.Parse(d.ToString("yyyy-MM-dd ") + t.ToShortTimeString());
+				d = UnixTimeStampToDateTime(Convert.ToDouble(date));
+				return d;
 			}
 		}
 
-		#region Helpers
+	        public static DateTime UnixTimeStampToDateTime(double unixTimeStamp) {
+	            // Unix timestamp is seconds past epoch
+	            DateTime dtDateTime = new DateTime(1970, 1, 1, 0, 0, 0, 0);
+	            dtDateTime = dtDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
+	            return dtDateTime;
+	        }
+	        
 		public static string GetConfigItem(string configItem, string error = "is empty.") {
 			try {
 				return ConfigurationManager.AppSettings[configItem];
